@@ -1,0 +1,19 @@
+@import url("./css_modules/header.css"); 
+@import url("./css_modules/utility.css");
+@import url("./css_modules/home.css");
+@import url("./css_modules/all_products.css");
+@import url("./css_modules/card.css");
+:root{
+  --azure : azure;
+  --main-bold: rgb(26, 144, 144);
+  --curr : black; 
+  --turqo: turquoise;
+
+}
+
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;  
+}

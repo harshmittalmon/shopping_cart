@@ -1,0 +1,82 @@
+.welcome-heading{
+    font-size: calc(2rem + 1vw);
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    padding: 1rem 1rem 5rem 1rem ;
+
+}
+.home p {
+    font-size: calc(0.6rem + 1vw);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.home span {
+    font-size: calc(1rem + 1vw);
+    color: var(--turqo);
+}
+.home-image-slider{
+    height: 220px;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    place-items: center;
+    max-width: 1536px;
+    width: 90%;
+    overflow: hidden;
+    /* background-color: black; */
+    /* mask-image: linear-gradient(to right, 0% rgba(218, 218, 218, 0.2), 20% rgba(0,0,0,0.5)); */
+}
+.home-image-slider::before{
+    position: absolute;
+    width: 150px;
+    left: 0;
+    height: 200px;
+    background: linear-gradient(to right, rgb(255, 255, 255) 20% , transparent );
+    content: "";
+    z-index: 2;
+
+}
+.home-image-slider::after {
+    position: absolute;
+    width: 150px;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(to left, rgb(255, 255, 255) 20% , transparent );
+    content: "";
+    z-index: 2;
+}
+
+.slide{
+    position: absolute;
+    left: 1200px;
+    height: 200px;
+    margin: 0 10px;
+    width: 200px;
+    perspective: 100px;
+    animation-name: scrollLeft ;
+    animation-duration: 20s ;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+.slide img{
+    width: 100%;
+    height: 200px;
+    transition: 0.3s all ease-in-out;
+    z-index: 200;
+}
+.slide img:hover{
+    transform: translateZ(10px);
+    animation-play-state: paused;
+}
+
+
+@keyframes scrollLeft {
+    to{
+        left: -200px;
+    }                                         
+}

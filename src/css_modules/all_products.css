@@ -1,0 +1,20 @@
+#root{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+.all-products{
+    color: white;
+    margin: 0 auto;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    padding: 1rem;
+}
+
+.all-products .grid{
+    padding: 3rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
+    gap: 2rem;
+}
