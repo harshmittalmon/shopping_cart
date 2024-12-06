@@ -1,7 +1,7 @@
 # React + Vite
 
 Live Link
-https://shoppingcartmon.netlify.app/home
+https://shoppingcartmon.netlify.app/
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
